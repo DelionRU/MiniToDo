@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+     <item
+        android:id="@+id/clear_compl"
+        android:title="Clear Complete">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"/>
+     <item
+        android:id="@+id/SQLactivtyMenu"
+        android:title="SQL">
+    </item>
+       <item
+        android:id="@+id/ExitMenu"
+        android:title="Exit">
+    </item>
+</menu>

@@ -1,0 +1,109 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:key="SQlmenu"
+        android:summary="Enable sql activity in main menu"
+        android:title="Sql menu" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:key="ExitDialog"
+        android:summary="Exit dialog on press Back button"
+        android:title="ExitDialog" >
+    </CheckBoxPreference>
+
+    <!--
+<CheckBoxPreference
+        android:key="chb1"
+        android:summaryOff="Description of checkbox 1 off"
+        android:summaryOn="Description of checkbox 1 on"
+        android:title="Checkbox near task" >
+    </CheckBoxPreference>
+
+<ListPreference
+        android:dependency="chb1"
+        android:entries="@array/entries"
+        android:entryValues="@array/entry_values"
+        android:key="list"
+        android:summary="Description of list"
+        android:title="List" >
+    </ListPreference>
+
+
+    <CheckBoxPreference
+        android:key="chb2"
+        android:summary="Description of checkbox 2"
+        android:title="CheckBox 2" >
+    </CheckBoxPreference>
+
+    <PreferenceScreen
+        android:dependency="chb2"
+        android:key="screen"
+        android:summary="Description of screen"
+        android:title="Screen" >
+        <CheckBoxPreference
+            android:key="chb3"
+            android:summary="Description of checkbox 3"
+            android:title="CheckBox 3" >
+        </CheckBoxPreference>
+
+        <PreferenceCategory
+            android:key="categ1"
+            android:summary="Description of category 1"
+            android:title="Category 1" >
+            <CheckBoxPreference
+                android:key="chb4"
+                android:summary="Description of checkbox 4"
+                android:title="CheckBox 4" >
+            </CheckBoxPreference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="categ2"
+            android:summary="Description of category 2"
+            android:title="Category 2" >
+            <CheckBoxPreference
+                android:key="chb5"
+                android:summary="Description of checkbox 5"
+                android:title="CheckBox 5" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:key="chb6"
+                android:summary="Description of checkbox 6"
+                android:title="CheckBox 6" >
+            </CheckBoxPreference>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    -->
+    <PreferenceScreen
+        android:key="WidgetScreenSettings"
+        android:summary="Clear tasks or DB"
+        android:title="Clear" >
+        <Preference
+        android:key="DeleteTasks"
+        android:summary="Delete all task from ToDo list"
+        android:title="Delete All tasks" />
+         <Preference
+        android:key="DeleteDB"
+        android:summary="Delete DATA BASE"
+        android:title="Delete DB" />
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:enabled="false"
+        android:key="categ1"
+        android:title="Not work" >
+        <PreferenceScreen
+            android:enabled="false"
+            android:key="WidgetScreenSettings"
+            android:summary="Not implemented"
+            android:title="Widget" >
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:enabled="false"
+            android:key="CheckBox"
+            android:summary="Not implemented"
+            android:title="Checkbox near task" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
