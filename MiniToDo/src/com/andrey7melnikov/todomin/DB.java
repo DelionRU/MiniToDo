@@ -22,10 +22,10 @@ public class DB {
 
 	final String LOG_TAG = "myLogs";
 
-	private static final String DB_NAME = "mydb";
-	private static final int DB_VERSION = 11;
+	public static final String DB_NAME = "mydb";
+	public static final int DB_VERSION = 11;
 	// private static final String DB_TABLE = "mytab";
-	private static final String DB_TABLE = "tasks";
+	public static final String DB_TABLE = "tasks";
 
 	public static final String COLUMN_ID = "_id";
 	public static final String COLUMN_IMP = "important";
