@@ -47,7 +47,11 @@
             android:name="com.andrey7melnikov.todomin.Settings"
             android:label="@string/title_activity_settings" >
         </activity>
-        <provider android:name="ToDoProvider" android:authorities="ru.com.andrey7melnikov.todomin.provider"></provider>
+
+        <provider
+            android:name="com.andrey7melnikov.todomin.ToDoProvider"
+            android:authorities="com.andrey7melnikov.todomin.provider" >
+        </provider>
     </application>
 
 </manifest>

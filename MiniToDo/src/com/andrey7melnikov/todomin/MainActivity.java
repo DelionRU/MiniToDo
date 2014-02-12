@@ -49,7 +49,7 @@ public class MainActivity extends FragmentActivity implements
 	CheckBox checkBoxImp;
 	Intent intent;
 	String selectedWord;
-	final String TAG = "States";
+	final String TAG = "mylog";
 	
 
 	/** Called when the activity is first created. */
@@ -369,14 +369,14 @@ public class MainActivity extends FragmentActivity implements
 
 		@Override
 		public boolean setViewValue(View v, Cursor arg_cur, int arg_int) {
-			Mylog.a("setViewValue, int - " + arg_int);
+			//Mylog.a("setViewValue, int - " + arg_int);
 			String textT;
 			switch (arg_cur.getInt(arg_cur
 					.getColumnIndex(DB.COLUMN_STATE))) {
 			
 			case DB.TASK_ADD:
 				((TextView) v).setPaintFlags(Paint.LINEAR_TEXT_FLAG);
-				Mylog.a("case DB.TASK_ADD:");
+				//Mylog.a("case DB.TASK_ADD:");
 				textT = arg_cur.getString(arg_cur
 						.getColumnIndex(DB.COLUMN_TEXT));
 				String impT = arg_cur.getString(arg_cur
@@ -394,7 +394,7 @@ public class MainActivity extends FragmentActivity implements
 				break;
 				
 			case DB.TASK_COMPL:
-				Mylog.a("case DB.TASK_COMPL:");
+				//Mylog.a("case DB.TASK_COMPL:");
 
 				textT = arg_cur.getString(arg_cur
 						.getColumnIndex(DB.COLUMN_TEXT));
